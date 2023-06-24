@@ -1,7 +1,9 @@
 package models;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -53,11 +55,22 @@ public class Aranzman {
         this.cenaPoOsobi = cenaPoOsobi;
         this.sajamskiPopust = sajamskiPopust;
     }
+    public static void upisiAranzmaneUDatoteku(List<Aranzman> aranzmani, String putanjaDoDatoteke) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(putanjaDoDatoteke))) {
+            for (Aranzman aranzman : aranzmani) {
+                bw.write(aranzman.toString());
+                bw.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
  
-        // ...
+        
 
-    public static List<Aranzman> ucitajAranzmaneIzDatoteke(String putanjaDoDatoteke) {
+
+	public static List<Aranzman> ucitajAranzmaneIzDatoteke(String putanjaDoDatoteke) {
         List<Aranzman> aranzmani = new ArrayList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(putanjaDoDatoteke))) {

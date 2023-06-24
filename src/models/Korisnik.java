@@ -110,6 +110,8 @@ public class Korisnik {
     public void setUloga(Uloga uloga) {
         this.uloga = uloga;
     }
+ 
+
     public static List<Korisnik> ucitajKorisnikeIzDatoteke(String nazivDatoteke) {
         List<Korisnik> korisnici = new ArrayList<>();
 

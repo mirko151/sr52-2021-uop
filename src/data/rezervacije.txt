@@ -1,2 +1,4 @@
-1;John Doe;john@example.com;Jane Smith;jane@example.com;2;0.0;KREIRANA;2023-06-19T12:30:45;Summer Vacation,Destination,7
+1;Marko;Markovic;11;Jovanovic;2;150.0;KREIRANA;12.06.2023
+2;Ana;Ivanovic;1111Petrovic;1;100.0;ZAVRSENA;14.06.2023
+
 

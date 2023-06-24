@@ -1,3 +1,4 @@
 Letovanje|letovanje.jpg|2023-06-07|7|100|Hotel|500.0|10.0
 Zimovanje|zimovanje.jpg|2023-12-15|1|50|Apartman|800.0|5.0
 Planinarenje|planinarenje.jpg|2023-08-20|1|20|aaaa|300.0|0.0
+Letovanje|ja.jpg|2023-06-30|1|2|Hotel|500.0|0.0

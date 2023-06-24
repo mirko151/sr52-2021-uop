@@ -18,7 +18,8 @@ import javax.swing.table.DefaultTableModel;
 import models.Aranzman;
 
 public class AranzmanProzor extends JFrame {
-    private JTable arrangementTable;
+    private static final long serialVersionUID = 1L;
+	private JTable arrangementTable;
     private JButton editButton;
     private JButton deleteButton;
 
@@ -96,6 +97,10 @@ public class AranzmanProzor extends JFrame {
                         arrangements.remove(selectedArrangement);
                         tableModel.removeRow(selectedRow);
                         JOptionPane.showMessageDialog(AranzmanProzor.this, "Aranžman je uspešno obrisan.");
+
+                        // Ažuriranje datoteke sa aranžmanima
+                        String putanjaDoDatoteke = "src/data/korisnik.txt";
+                        Aranzman.upisiAranzmaneUDatoteku(arrangements, putanjaDoDatoteke);
                     }
                 }
             }
